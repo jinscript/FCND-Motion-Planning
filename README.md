@@ -31,9 +31,10 @@ These scripts contain a basic planning implementation that includes:
 1) Provide basic callbacks and state transition functions.
 2) Provide method `plan_path()` to compute a list of waypoints.
 3) Reads obstacle data from `colliders.csv`.
-4) Compute and set grid start and goal points.
-5) Perform A star search to come up with a list of waypoints.
-6) Send waypoints to simulator.
+4) Create grid with obstacle data.
+5) Compute and set grid start and goal points.
+6) Perform A star search to come up with a list of waypoints.
+7) Send waypoints to simulator.
 
 ### Implementing Your Path Planning Algorithm
 
@@ -65,8 +66,8 @@ If test passes, current point is on the straight line between last turning point
 4) Put last point in pruned_path.
 5) Return pruned_path.
 
-Collinearity test done by examine the smallest magnitude eigen value of the covariance matrix of three points.
-If three points are collinear, its covariance matrix should be low rank and smallest magnitude eigen value should be
+Collinearity test is done by examine the smallest magnitude eigen value of the covariance matrix of three points.
+If three points are collinear, the covariance matrix should be low rank and smallest magnitude eigen value should be
 approximately zero.
 
 ### Execute the flight
