@@ -24,6 +24,10 @@
 
 You're reading it! Below I describe how I addressed each rubric point and where in my code each point is handled.
 
+Usage: `python motion_planning.py --goal=<goal_lon,goal_lat,goal_alt>`
+
+Example usage: `python motion_planning.py --goal=-122.39845,37.79248,5` 
+
 ### Explain the Starter Code
 
 #### 1. Explain the functionality of what's provided in `motion_planning.py` and `planning_utils.py`
